@@ -1,0 +1,30 @@
+PODS:
+  - Masonry (1.1.0)
+  - MJExtension (3.0.15.1)
+  - Realm (3.7.6):
+    - Realm/Headers (= 3.7.6)
+  - Realm/Headers (3.7.6)
+  - SVProgressHUD (2.2.5)
+
+DEPENDENCIES:
+  - Masonry
+  - MJExtension
+  - Realm
+  - SVProgressHUD
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+    - MJExtension
+    - Realm
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  Realm: 9eaecad54712d6246d08ba34c10f354e4715d7d3
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+
+PODFILE CHECKSUM: 6250ba8eb89d1a175413126022f3da550682b21d
+
+COCOAPODS: 1.5.0

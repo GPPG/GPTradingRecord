@@ -1,0 +1,75 @@
+
+//
+//  TradingRecord.pch
+//  TradingRecord
+//
+//  Created by 郭鹏 on 2018/9/7.
+//  Copyright © 2018年 郭鹏. All rights reserved.
+//
+
+#ifndef TradingRecord_pch
+#define TradingRecord_pch
+
+
+#import "UITabBarController+AddChildVC.h"
+#import "UIBarButtonItem+Item.h"
+#import "UIColor+Hex.h"
+#import "UIView+LayoutMethods.h"
+#import <Realm.h>
+#import <Masonry.h>
+
+/**
+ *  Block
+ */
+#define GPWeakSelf(type)  __weak typeof(type) weak##type = type
+#define GPStrongSelf(type)  __strong typeof(type) type = weak##type
+
+/**
+ *  屏幕尺寸
+ */
+#define CGSCREEN CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5AND5S (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6AND6S (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6PAND6SP (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
+#define SBVC(vcName) [UIStoryboard storyboardWithName:NSStringFromClass([vcName class]) bundle:nil].instantiateInitialViewController
+#define SBTRegis(ViewName,CellID)  [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([ViewName class]) bundle:nil] forCellReuseIdentifier:CellID]
+
+#define SBCRegis(ViewName,CellID) [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([ViewName class]) bundle:nil] forCellWithReuseIdentifier:CellID]
+
+#define SBCHRegis(viewName,CellId)  [self.collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([viewName class]) bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:CellId]
+
+#define SBDC(CellID,indexPath) [collectionView dequeueReusableCellWithReuseIdentifier:CellID forIndexPath:indexPath]
+#define SBDCH(CellID) [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:CellID forIndexPath:indexPath]
+
+#define SBXV(ClassName) [[NSBundle mainBundle]loadNibNamed:NSStringFromClass([ClassName class]) owner:nil options:nil].firstObject
+
+
+/**
+ *  颜色
+ */
+
+#define  GPTradingRedColor [UIColor colorWithHexString:@"e23e57"]
+
+#define  GPTradingWhiteBlueColor [UIColor colorWithHexString:@"87e0ff"]
+
+#define  GPTradingBlueColor [UIColor colorWithHexString:@"2f89fc"]
+
+#define GPColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define GPColorA(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)/255.0]
+#define GPRandomColor GPColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+#define GPGrayColor(v) GPColor(v, v, v)
+#define GPCommonBgColor GPGrayColor(240)
+
+#endif /* TradingRecord_pch */
