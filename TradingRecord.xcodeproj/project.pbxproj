@@ -21,6 +21,10 @@
 		E02AE0F6214F4FBC00FE1DB2 /* DWFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E02AE0F5214F4FBC00FE1DB2 /* DWFlowLayout.m */; };
 		E02AE0FF214F570E00FE1DB2 /* GPAddRecordCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E02AE0FD214F570E00FE1DB2 /* GPAddRecordCell.m */; };
 		E02AE100214F570E00FE1DB2 /* GPAddRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02AE0FE214F570E00FE1DB2 /* GPAddRecordCell.xib */; };
+		E02AE103214F914D00FE1DB2 /* GPCurrentHoldOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E02AE102214F914D00FE1DB2 /* GPCurrentHoldOrderView.m */; };
+		E02AE105214F944000FE1DB2 /* GPCurrentHoldOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02AE104214F944000FE1DB2 /* GPCurrentHoldOrderView.xib */; };
+		E02AE108214F9D3200FE1DB2 /* GPBearPositionView.m in Sources */ = {isa = PBXBuildFile; fileRef = E02AE107214F9D3200FE1DB2 /* GPBearPositionView.m */; };
+		E02AE10A214F9D3B00FE1DB2 /* GPBearPositionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E02AE109214F9D3B00FE1DB2 /* GPBearPositionView.xib */; };
 		E051E2BC214B59E6005EADD7 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = E051E2BB214B59E5005EADD7 /* UIView+LayoutMethods.m */; };
 		E089EC0B21463A66007975F3 /* GPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E089EC0A21463A66007975F3 /* GPTabBarController.m */; };
 		E089EC1021463B53007975F3 /* UITabBarController+AddChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E089EC0E21463B53007975F3 /* UITabBarController+AddChildVC.m */; };
@@ -63,6 +67,12 @@
 		E02AE0FC214F570E00FE1DB2 /* GPAddRecordCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPAddRecordCell.h; sourceTree = "<group>"; };
 		E02AE0FD214F570E00FE1DB2 /* GPAddRecordCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPAddRecordCell.m; sourceTree = "<group>"; };
 		E02AE0FE214F570E00FE1DB2 /* GPAddRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPAddRecordCell.xib; sourceTree = "<group>"; };
+		E02AE101214F914D00FE1DB2 /* GPCurrentHoldOrderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPCurrentHoldOrderView.h; sourceTree = "<group>"; };
+		E02AE102214F914D00FE1DB2 /* GPCurrentHoldOrderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPCurrentHoldOrderView.m; sourceTree = "<group>"; };
+		E02AE104214F944000FE1DB2 /* GPCurrentHoldOrderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPCurrentHoldOrderView.xib; sourceTree = "<group>"; };
+		E02AE106214F9D3200FE1DB2 /* GPBearPositionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPBearPositionView.h; sourceTree = "<group>"; };
+		E02AE107214F9D3200FE1DB2 /* GPBearPositionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPBearPositionView.m; sourceTree = "<group>"; };
+		E02AE109214F9D3B00FE1DB2 /* GPBearPositionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPBearPositionView.xib; sourceTree = "<group>"; };
 		E051E2BA214B59E5005EADD7 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
 		E051E2BB214B59E5005EADD7 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
 		E089EC0921463A66007975F3 /* GPTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTabBarController.h; sourceTree = "<group>"; };
@@ -193,6 +203,12 @@
 				E02AE0FC214F570E00FE1DB2 /* GPAddRecordCell.h */,
 				E02AE0FD214F570E00FE1DB2 /* GPAddRecordCell.m */,
 				E02AE0FE214F570E00FE1DB2 /* GPAddRecordCell.xib */,
+				E02AE101214F914D00FE1DB2 /* GPCurrentHoldOrderView.h */,
+				E02AE102214F914D00FE1DB2 /* GPCurrentHoldOrderView.m */,
+				E02AE104214F944000FE1DB2 /* GPCurrentHoldOrderView.xib */,
+				E02AE106214F9D3200FE1DB2 /* GPBearPositionView.h */,
+				E02AE107214F9D3200FE1DB2 /* GPBearPositionView.m */,
+				E02AE109214F9D3B00FE1DB2 /* GPBearPositionView.xib */,
 			);
 			path = AddView;
 			sourceTree = "<group>";
@@ -444,8 +460,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E02AE0F2214F48EC00FE1DB2 /* GPAssetsHeadView.xib in Resources */,
+				E02AE10A214F9D3B00FE1DB2 /* GPBearPositionView.xib in Resources */,
 				E02AE100214F570E00FE1DB2 /* GPAddRecordCell.xib in Resources */,
 				E0057B6421424D6D0013A5DD /* LaunchScreen.storyboard in Resources */,
+				E02AE105214F944000FE1DB2 /* GPCurrentHoldOrderView.xib in Resources */,
 				E02AE0ED214F473600FE1DB2 /* GPAssetsCell.xib in Resources */,
 				E0057B6121424D6D0013A5DD /* Assets.xcassets in Resources */,
 				E089EC6C2147BE63007975F3 /* GPAssetsController.storyboard in Resources */,
@@ -502,11 +520,13 @@
 				E089EC2721463B8C007975F3 /* UIImage+TYLaunchImage.m in Sources */,
 				E089EC2521463B8C007975F3 /* UIImage+Clip.m in Sources */,
 				E089EC3E2146409C007975F3 /* GPMineController.m in Sources */,
+				E02AE103214F914D00FE1DB2 /* GPCurrentHoldOrderView.m in Sources */,
 				E089EC2421463B8C007975F3 /* UIImage+Size.m in Sources */,
 				E0057B5C21424D6B0013A5DD /* ViewController.m in Sources */,
 				E02AE0FF214F570E00FE1DB2 /* GPAddRecordCell.m in Sources */,
 				E089EC1421463B62007975F3 /* UIBarButtonItem+Item.m in Sources */,
 				E0057B6721424D6D0013A5DD /* main.m in Sources */,
+				E02AE108214F9D3200FE1DB2 /* GPBearPositionView.m in Sources */,
 				E089EC1021463B53007975F3 /* UITabBarController+AddChildVC.m in Sources */,
 				E089EC1821463B6E007975F3 /* UIColor+Hex.m in Sources */,
 				E051E2BC214B59E6005EADD7 /* UIView+LayoutMethods.m in Sources */,

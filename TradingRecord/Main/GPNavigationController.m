@@ -36,11 +36,10 @@
     [self.navigationBar setTitleTextAttributes:textAttrs];
     
     //设置导航栏的背景图片
-    [self.navigationBar setBackgroundImage:[self imageWithColor:GPTradingRedColor] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationBar setBackgroundImage:[self imageWithColor:GPTradingBlueColor] forBarMetrics:UIBarMetricsDefault];
     
     // 去掉导航栏底部阴影
     [self.navigationBar setShadowImage:[[UIImage alloc]init]];
-    
 }
 
 - (UIImage *)imageWithColor:(UIColor *)color

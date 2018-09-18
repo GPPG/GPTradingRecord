@@ -100,7 +100,6 @@ static NSString * const GPAddRecordCellID = @"GPAddRecordCellID";
     return cell;
 }
 
-
 #pragma mark - lazy
 - (UICollectionView *)collectionView
 {

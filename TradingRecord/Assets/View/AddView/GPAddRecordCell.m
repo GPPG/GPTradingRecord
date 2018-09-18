@@ -30,7 +30,7 @@
     self.containerView.layer.cornerRadius = 9;
     self.containerView.layer.masksToBounds = YES;
     self.containerView.backgroundColor = [UIColor colorWithHexString:@"3ec1d3"];
-    
 }
+
 
 @end

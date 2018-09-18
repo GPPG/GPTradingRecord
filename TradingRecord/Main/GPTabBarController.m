@@ -39,7 +39,7 @@
 
     [[UITabBarItem appearanceWhenContainedIn:[GPTabBarController class], nil] setTitleTextAttributes:@{NSForegroundColorAttributeName :[UIColor colorWithRed:113/255.0 green:113/255.0 blue:113/255.0 alpha:1.0] } forState:UIControlStateNormal];
     
-    [[UITabBarItem appearanceWhenContainedIn:[GPTabBarController class], nil] setTitleTextAttributes:@{NSForegroundColorAttributeName :GPTradingRedColor } forState:UIControlStateSelected];
+    [[UITabBarItem appearanceWhenContainedIn:[GPTabBarController class], nil] setTitleTextAttributes:@{NSForegroundColorAttributeName :GPTradingBlueColor } forState:UIControlStateSelected];
 }
 
 
@@ -59,7 +59,7 @@
 
     GPAssetsController *assetsVC = SBVC(GPAssetsController);
     
-    [self addChildViewController:assetsVC title:@"资产" image:@"assets_off" selectedImage:@"assets_on" imageInsets:imageInsets titlePosition:titlePosition navControllerClass:[GPNavigationController class]];
+    [self addChildViewController:assetsVC title:@"资产" image:@"assets_off" selectedImage:@"" imageInsets:imageInsets titlePosition:titlePosition navControllerClass:[GPNavigationController class]];
 }
 
 - (void)addReportController{
@@ -69,7 +69,7 @@
     
     GPReportController *reportVC = [[GPReportController alloc]init];
     
-    [self addChildViewController:reportVC title:@"报表" image:@"report_off" selectedImage:@"report_on" imageInsets:imageInsets titlePosition:titlePosition navControllerClass:[GPNavigationController class]];
+    [self addChildViewController:reportVC title:@"报表" image:@"report_off" selectedImage:@"" imageInsets:imageInsets titlePosition:titlePosition navControllerClass:[GPNavigationController class]];
     
 }
 
@@ -79,7 +79,7 @@
     UIOffset titlePosition = UIOffsetMake(0, -2);
     
     GPMineController *mineVC = [[GPMineController alloc]init];
-    [self addChildViewController:mineVC title:@"我的" image:@"mine_off" selectedImage:@"mine_on" imageInsets:imageInsets titlePosition:titlePosition navControllerClass:[GPNavigationController class]];
+    [self addChildViewController:mineVC title:@"我的" image:@"mine_off" selectedImage:@"" imageInsets:imageInsets titlePosition:titlePosition navControllerClass:[GPNavigationController class]];
 }
 
 @end
