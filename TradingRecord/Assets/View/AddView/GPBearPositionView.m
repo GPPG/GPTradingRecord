@@ -20,15 +20,11 @@
     [super awakeFromNib];
 
     [self setupUI];
-    
 }
 
 - (void)setupUI{
-
-    
-    
-    
-    
+    self.hintLabel.font = [UIFont systemFontOfSize:20];
+    self.hintLabel.text = @"空仓是一种智慧";
 }
 
 @end

@@ -7,10 +7,17 @@
 //
 
 #import "GPAddRecordCell.h"
+#import "GPCurrentHoldOrderView.h"
+#import "GPBearPositionView.h"
+
 
 @interface GPAddRecordCell()
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+
+@property (nonatomic, strong) GPCurrentHoldOrderView *holdOrderView;
+
+@property (nonatomic, strong) GPBearPositionView *bearPositionView;
 
 @end
 
@@ -21,6 +28,8 @@
     [super awakeFromNib];
     
     [self setupUI];
+    
+    [self addView];
 }
 
 - (void)setupUI{
@@ -32,5 +41,26 @@
     self.containerView.backgroundColor = [UIColor colorWithHexString:@"3ec1d3"];
 }
 
+
+- (void)addView{
+
+    
+}
+
+- (GPCurrentHoldOrderView *)holdOrderView
+{
+    if (!_holdOrderView) {
+        _holdOrderView = SBXV(GPCurrentHoldOrderView);
+    }
+    return _holdOrderView;
+}
+
+- (GPBearPositionView *)bearPositionView
+{
+    if (!_bearPositionView) {
+        _bearPositionView = SBXV(GPBearPositionView);
+    }
+    return _bearPositionView;
+}
 
 @end
