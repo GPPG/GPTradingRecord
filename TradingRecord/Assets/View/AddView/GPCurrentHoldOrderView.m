@@ -26,6 +26,18 @@
 - (void)awakeFromNib{
     [super awakeFromNib];
     
+    [self setupUI];
+    
+}
+
+- (void)setupUI{
+    self.backgroundColor = GPTradingWhiteBlueColor;
+    
+    self.titleLabel.text = @"现货 BTC";
+    self.orderSendLabel.text = @"开仓均价: 6500";
+    self.profitLossLabel.text = @"盈亏比: 2 : 1";
+    self.stopLossLabel.text = @"止损价格: 6200";
+    self.stopProfitLabel.text = @"止盈价格: 7100";
     
 }
 

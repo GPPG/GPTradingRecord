@@ -44,7 +44,17 @@
 
 - (void)addView{
 
+    [self.containerView addSubview:self.bearPositionView];
     
+    [self.bearPositionView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.containerView);
+    }];
+    
+    [self.containerView addSubview:self.holdOrderView];
+    
+    [self.holdOrderView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(self.containerView);        
+    }];
 }
 
 - (GPCurrentHoldOrderView *)holdOrderView

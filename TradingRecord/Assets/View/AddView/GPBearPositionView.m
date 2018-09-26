@@ -23,8 +23,12 @@
 }
 
 - (void)setupUI{
+
+    self.hintLabel.textColor = [UIColor whiteColor];
+    self.backgroundColor = GPTradingWhiteBlueColor;
     self.hintLabel.font = [UIFont systemFontOfSize:20];
     self.hintLabel.text = @"空仓是一种智慧";
+    
 }
 
 @end

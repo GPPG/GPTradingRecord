@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^AddActionBlock)(void);
 @interface GPAddOrderView : UIView
+
+@property (nonatomic, copy) AddActionBlock addActionBlock;
 
 @end

@@ -28,7 +28,12 @@
 		E034CB9D2152233600DE9542 /* GPOrderDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E034CB9C2152233600DE9542 /* GPOrderDetailsController.m */; };
 		E034CB9F2152234300DE9542 /* GPOrderDetailsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E034CB9E2152234300DE9542 /* GPOrderDetailsController.storyboard */; };
 		E034CBA32152258C00DE9542 /* GPAddOrderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E034CBA22152258C00DE9542 /* GPAddOrderView.m */; };
+		E034CBA5215251BA00DE9542 /* GPAddOrderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E034CBA4215251BA00DE9542 /* GPAddOrderView.xib */; };
+		E034CBA92152648200DE9542 /* GPOrderDetailsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E034CBA72152648200DE9542 /* GPOrderDetailsTableViewCell.m */; };
+		E034CBAA2152648200DE9542 /* GPOrderDetailsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E034CBA82152648200DE9542 /* GPOrderDetailsTableViewCell.xib */; };
 		E051E2BC214B59E6005EADD7 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = E051E2BB214B59E5005EADD7 /* UIView+LayoutMethods.m */; };
+		E086B04E215A1CB800462F1A /* GPHighlightBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = E086B04D215A1CB800462F1A /* GPHighlightBtn.m */; };
+		E086B051215A285200462F1A /* GPAddOrderDetailsController.m in Sources */ = {isa = PBXBuildFile; fileRef = E086B050215A285200462F1A /* GPAddOrderDetailsController.m */; };
 		E089EC0B21463A66007975F3 /* GPTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = E089EC0A21463A66007975F3 /* GPTabBarController.m */; };
 		E089EC1021463B53007975F3 /* UITabBarController+AddChildVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E089EC0E21463B53007975F3 /* UITabBarController+AddChildVC.m */; };
 		E089EC1421463B62007975F3 /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = E089EC1321463B62007975F3 /* UIBarButtonItem+Item.m */; };
@@ -43,6 +48,7 @@
 		E089EC3E2146409C007975F3 /* GPMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E089EC3D2146409C007975F3 /* GPMineController.m */; };
 		E089EC4121465BAD007975F3 /* GPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E089EC4021465BAD007975F3 /* GPNavigationController.m */; };
 		E089EC6C2147BE63007975F3 /* GPAssetsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E089EC6B2147BE63007975F3 /* GPAssetsController.storyboard */; };
+		E0FD0B90215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0FD0B8F215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,8 +87,16 @@
 		E034CB9E2152234300DE9542 /* GPOrderDetailsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GPOrderDetailsController.storyboard; sourceTree = "<group>"; };
 		E034CBA12152258C00DE9542 /* GPAddOrderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPAddOrderView.h; sourceTree = "<group>"; };
 		E034CBA22152258C00DE9542 /* GPAddOrderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPAddOrderView.m; sourceTree = "<group>"; };
+		E034CBA4215251BA00DE9542 /* GPAddOrderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPAddOrderView.xib; sourceTree = "<group>"; };
+		E034CBA62152648200DE9542 /* GPOrderDetailsTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPOrderDetailsTableViewCell.h; sourceTree = "<group>"; };
+		E034CBA72152648200DE9542 /* GPOrderDetailsTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPOrderDetailsTableViewCell.m; sourceTree = "<group>"; };
+		E034CBA82152648200DE9542 /* GPOrderDetailsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPOrderDetailsTableViewCell.xib; sourceTree = "<group>"; };
 		E051E2BA214B59E5005EADD7 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
 		E051E2BB214B59E5005EADD7 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
+		E086B04C215A1CB800462F1A /* GPHighlightBtn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPHighlightBtn.h; sourceTree = "<group>"; };
+		E086B04D215A1CB800462F1A /* GPHighlightBtn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPHighlightBtn.m; sourceTree = "<group>"; };
+		E086B04F215A285200462F1A /* GPAddOrderDetailsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPAddOrderDetailsController.h; sourceTree = "<group>"; };
+		E086B050215A285200462F1A /* GPAddOrderDetailsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPAddOrderDetailsController.m; sourceTree = "<group>"; };
 		E089EC0921463A66007975F3 /* GPTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPTabBarController.h; sourceTree = "<group>"; };
 		E089EC0A21463A66007975F3 /* GPTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPTabBarController.m; sourceTree = "<group>"; };
 		E089EC0E21463B53007975F3 /* UITabBarController+AddChildVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+AddChildVC.m"; sourceTree = "<group>"; };
@@ -110,6 +124,7 @@
 		E089EC3F21465BAD007975F3 /* GPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPNavigationController.h; sourceTree = "<group>"; };
 		E089EC4021465BAD007975F3 /* GPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPNavigationController.m; sourceTree = "<group>"; };
 		E089EC6B2147BE63007975F3 /* GPAssetsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GPAssetsController.storyboard; sourceTree = "<group>"; };
+		E0FD0B8F215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GPAddOrderDetailsController.storyboard; sourceTree = "<group>"; };
 		FCB62B8C053A3CA290D6CD18 /* Pods-TradingRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TradingRecord/Pods-TradingRecord.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +178,7 @@
 		E0057B5621424D6B0013A5DD /* TradingRecord */ = {
 			isa = PBXGroup;
 			children = (
+				E086B04B215A1C9A00462F1A /* Base */,
 				E089EC632147BA26007975F3 /* Tool */,
 				E089EC08214638C1007975F3 /* Main */,
 				E089EC2A21463CF9007975F3 /* Assets */,
@@ -224,8 +240,12 @@
 		E034CBA02152256700DE9542 /* OrderDetailsView */ = {
 			isa = PBXGroup;
 			children = (
+				E034CBA62152648200DE9542 /* GPOrderDetailsTableViewCell.h */,
+				E034CBA72152648200DE9542 /* GPOrderDetailsTableViewCell.m */,
+				E034CBA82152648200DE9542 /* GPOrderDetailsTableViewCell.xib */,
 				E034CBA12152258C00DE9542 /* GPAddOrderView.h */,
 				E034CBA22152258C00DE9542 /* GPAddOrderView.m */,
+				E034CBA4215251BA00DE9542 /* GPAddOrderView.xib */,
 			);
 			path = OrderDetailsView;
 			sourceTree = "<group>";
@@ -237,6 +257,15 @@
 				E051E2BB214B59E5005EADD7 /* UIView+LayoutMethods.m */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		E086B04B215A1C9A00462F1A /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E086B04C215A1CB800462F1A /* GPHighlightBtn.h */,
+				E086B04D215A1CB800462F1A /* GPHighlightBtn.m */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		E089EC08214638C1007975F3 /* Main */ = {
@@ -333,6 +362,9 @@
 				E034CB9B2152233600DE9542 /* GPOrderDetailsController.h */,
 				E034CB9C2152233600DE9542 /* GPOrderDetailsController.m */,
 				E034CB9E2152234300DE9542 /* GPOrderDetailsController.storyboard */,
+				E086B04F215A285200462F1A /* GPAddOrderDetailsController.h */,
+				E086B050215A285200462F1A /* GPAddOrderDetailsController.m */,
+				E0FD0B8F215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -480,6 +512,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E034CBAA2152648200DE9542 /* GPOrderDetailsTableViewCell.xib in Resources */,
+				E034CBA5215251BA00DE9542 /* GPAddOrderView.xib in Resources */,
 				E02AE0F2214F48EC00FE1DB2 /* GPAssetsHeadView.xib in Resources */,
 				E034CB9F2152234300DE9542 /* GPOrderDetailsController.storyboard in Resources */,
 				E02AE10A214F9D3B00FE1DB2 /* GPBearPositionView.xib in Resources */,
@@ -488,6 +522,7 @@
 				E02AE105214F944000FE1DB2 /* GPCurrentHoldOrderView.xib in Resources */,
 				E02AE0ED214F473600FE1DB2 /* GPAssetsCell.xib in Resources */,
 				E0057B6121424D6D0013A5DD /* Assets.xcassets in Resources */,
+				E0FD0B90215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard in Resources */,
 				E089EC6C2147BE63007975F3 /* GPAssetsController.storyboard in Resources */,
 				E0057B5F21424D6B0013A5DD /* Main.storyboard in Resources */,
 			);
@@ -541,10 +576,12 @@
 			files = (
 				E089EC2721463B8C007975F3 /* UIImage+TYLaunchImage.m in Sources */,
 				E089EC2521463B8C007975F3 /* UIImage+Clip.m in Sources */,
+				E086B051215A285200462F1A /* GPAddOrderDetailsController.m in Sources */,
 				E089EC3E2146409C007975F3 /* GPMineController.m in Sources */,
 				E02AE103214F914D00FE1DB2 /* GPCurrentHoldOrderView.m in Sources */,
 				E089EC2421463B8C007975F3 /* UIImage+Size.m in Sources */,
 				E0057B5C21424D6B0013A5DD /* ViewController.m in Sources */,
+				E034CBA92152648200DE9542 /* GPOrderDetailsTableViewCell.m in Sources */,
 				E02AE0FF214F570E00FE1DB2 /* GPAddRecordCell.m in Sources */,
 				E089EC1421463B62007975F3 /* UIBarButtonItem+Item.m in Sources */,
 				E0057B6721424D6D0013A5DD /* main.m in Sources */,
@@ -555,6 +592,7 @@
 				E089EC1821463B6E007975F3 /* UIColor+Hex.m in Sources */,
 				E051E2BC214B59E6005EADD7 /* UIView+LayoutMethods.m in Sources */,
 				E089EC2621463B8C007975F3 /* UIImage+Snap.m in Sources */,
+				E086B04E215A1CB800462F1A /* GPHighlightBtn.m in Sources */,
 				E02AE0EC214F473600FE1DB2 /* GPAssetsCell.m in Sources */,
 				E089EC2821463B8C007975F3 /* UIImage+Color.m in Sources */,
 				E089EC3B2146408E007975F3 /* GPReportController.m in Sources */,

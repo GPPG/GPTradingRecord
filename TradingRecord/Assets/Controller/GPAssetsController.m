@@ -13,10 +13,12 @@
 #import "GPAssetsCell.h"
 #import "DWFlowLayout.h"
 #import "GPAddRecordCell.h"
+#import "GPOrderDetailsController.h"
 
 static NSString * const GPAssetsCellID = @"GPAssetsCellID";
 
 static NSString * const GPAddRecordCellID = @"GPAddRecordCellID";
+
 
 @interface GPAssetsController ()<UITableViewDelegate,UITableViewDataSource,UICollectionViewDelegate,UICollectionViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -87,6 +89,7 @@ static NSString * const GPAddRecordCellID = @"GPAddRecordCellID";
 #pragma mark - UICollectionView Delegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
+    
 }
 
 #pragma mark - UITableView Data Source
@@ -98,6 +101,14 @@ static NSString * const GPAddRecordCellID = @"GPAddRecordCellID";
     
     GPAddRecordCell *cell = [tableView dequeueReusableCellWithIdentifier:GPAddRecordCellID forIndexPath:indexPath];
     return cell;
+}
+
+#pragma mark - UITableView Delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    GPOrderDetailsController *detailVC = SBVC(GPOrderDetailsController);
+    
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 #pragma mark - lazy
