@@ -18,6 +18,9 @@
 #import <Realm.h>
 #import <Masonry.h>
 
+#define GPLog(format,...) printf("%s",[[NSString stringWithFormat:(format), ##__VA_ARGS__] UTF8String])
+
+
 /**
  *  Block
  */

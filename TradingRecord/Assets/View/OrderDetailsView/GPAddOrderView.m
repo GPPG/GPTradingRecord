@@ -26,16 +26,16 @@
 
 - (void)setupUI{
     self.backgroundColor = GPTradingBlueColor;
-}
 
+    
+}
 
 - (void)layoutSubviews{
     [super layoutSubviews];
     
-    NSLog(@"111:%@",NSStringFromCGRect(self.frame));
-
     self.layer.cornerRadius =  self.height * 0.5;
     self.layer.masksToBounds = YES;
+    
 }
 
 - (IBAction)addAction:(id)sender {

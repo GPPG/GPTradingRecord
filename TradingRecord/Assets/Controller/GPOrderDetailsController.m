@@ -9,6 +9,7 @@
 #import "GPOrderDetailsController.h"
 #import "GPOrderDetailsTableViewCell.h"
 #import "GPAddOrderView.h"
+#import "GPAddOrderDetailsController.h"
 
 @interface GPOrderDetailsController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -35,6 +36,8 @@ static NSString * const GPOrderDetailsTableViewCellID = @"GPOrderDetailsTableVie
     [self regisCell];
     
     [self addView];
+    
+    [self callBack];
 }
 
 #pragma mark - set up
@@ -57,9 +60,18 @@ static NSString * const GPOrderDetailsTableViewCellID = @"GPOrderDetailsTableVie
 
 - (void)addView{
     
-    self.addOrderView.frame = CGRectMake(SCREEN_WIDTH - 80, SCREEN_HEIGHT - 150, 60, 60);
-    NSLog(@"%@",NSStringFromCGRect(self.addOrderView.frame));
+    self.addOrderView.frame = CGRectMake(SCREEN_WIDTH - 80, SCREEN_HEIGHT - 150, 40, 40);
     [self.view addSubview:self.addOrderView];
+
+}
+
+- (void)callBack{
+    
+    GPWeakSelf(self);
+    self.addOrderView.addActionBlock = ^{
+        GPAddOrderDetailsController *addOrderDetailVC = [[GPAddOrderDetailsController alloc]initWithType:AddStyle];
+        [weakself.navigationController pushViewController:addOrderDetailVC animated:YES];
+    };
 }
 
 #pragma mark - tableView dataSource
@@ -87,17 +99,24 @@ static NSString * const GPOrderDetailsTableViewCellID = @"GPOrderDetailsTableVie
     return 25;
 }
 
+#pragma mark - tableView delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    GPAddOrderDetailsController *addOrderDetailVC = [[GPAddOrderDetailsController alloc]initWithType:UpdateStyle];
+    [self.navigationController pushViewController:addOrderDetailVC animated:YES];
+}
+
+
 #pragma mark - scorllView delegate
  -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
     
     if (scrollView.contentOffset.y > self.offsetY && scrollView.contentOffset.y > 0) {
         [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.3 initialSpringVelocity:5 options:UIViewAnimationOptionLayoutSubviews animations:^{
-            self.addOrderView.frame = CGRectMake(SCREEN_WIDTH - 80, SCREEN_HEIGHT, 60, 60);;
+            self.addOrderView.frame = CGRectMake(SCREEN_WIDTH - 80, SCREEN_HEIGHT, 40, 40);;
         } completion:^(BOOL finished){}];
         
     }else if (scrollView.contentOffset.y < self.offsetY ){
         [UIView animateWithDuration:0.5 delay:0.0 usingSpringWithDamping:0.3 initialSpringVelocity:5 options:UIViewAnimationOptionLayoutSubviews animations:^{
-            self.addOrderView.frame = CGRectMake(SCREEN_WIDTH - 80, SCREEN_HEIGHT - 150, 60, 60);;
+            self.addOrderView.frame = CGRectMake(SCREEN_WIDTH - 80, SCREEN_HEIGHT - 150, 40, 40);;
         } completion:^(BOOL finished){}];
     }
     self.offsetY = scrollView.contentOffset.y;

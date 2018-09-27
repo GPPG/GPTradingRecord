@@ -48,7 +48,10 @@
 		E089EC3E2146409C007975F3 /* GPMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = E089EC3D2146409C007975F3 /* GPMineController.m */; };
 		E089EC4121465BAD007975F3 /* GPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E089EC4021465BAD007975F3 /* GPNavigationController.m */; };
 		E089EC6C2147BE63007975F3 /* GPAssetsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E089EC6B2147BE63007975F3 /* GPAssetsController.storyboard */; };
-		E0FD0B90215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0FD0B8F215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard */; };
+		E0AB5BF7215B383F00B9D46A /* GPAddOrderDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AB5BF5215B383F00B9D46A /* GPAddOrderDetailsCell.m */; };
+		E0AB5BF8215B383F00B9D46A /* GPAddOrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AB5BF6215B383F00B9D46A /* GPAddOrderDetailsCell.xib */; };
+		E0AB5BFB215B583000B9D46A /* GPAddOrderDetailHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0AB5BFA215B583000B9D46A /* GPAddOrderDetailHeadView.m */; };
+		E0AB5BFD215B583B00B9D46A /* GPAddOrderDetailHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0AB5BFC215B583B00B9D46A /* GPAddOrderDetailHeadView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -124,7 +127,12 @@
 		E089EC3F21465BAD007975F3 /* GPNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPNavigationController.h; sourceTree = "<group>"; };
 		E089EC4021465BAD007975F3 /* GPNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPNavigationController.m; sourceTree = "<group>"; };
 		E089EC6B2147BE63007975F3 /* GPAssetsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GPAssetsController.storyboard; sourceTree = "<group>"; };
-		E0FD0B8F215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GPAddOrderDetailsController.storyboard; sourceTree = "<group>"; };
+		E0AB5BF4215B383F00B9D46A /* GPAddOrderDetailsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPAddOrderDetailsCell.h; sourceTree = "<group>"; };
+		E0AB5BF5215B383F00B9D46A /* GPAddOrderDetailsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPAddOrderDetailsCell.m; sourceTree = "<group>"; };
+		E0AB5BF6215B383F00B9D46A /* GPAddOrderDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPAddOrderDetailsCell.xib; sourceTree = "<group>"; };
+		E0AB5BF9215B583000B9D46A /* GPAddOrderDetailHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPAddOrderDetailHeadView.h; sourceTree = "<group>"; };
+		E0AB5BFA215B583000B9D46A /* GPAddOrderDetailHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPAddOrderDetailHeadView.m; sourceTree = "<group>"; };
+		E0AB5BFC215B583B00B9D46A /* GPAddOrderDetailHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GPAddOrderDetailHeadView.xib; sourceTree = "<group>"; };
 		FCB62B8C053A3CA290D6CD18 /* Pods-TradingRecord.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TradingRecord.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TradingRecord/Pods-TradingRecord.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -364,7 +372,6 @@
 				E034CB9E2152234300DE9542 /* GPOrderDetailsController.storyboard */,
 				E086B04F215A285200462F1A /* GPAddOrderDetailsController.h */,
 				E086B050215A285200462F1A /* GPAddOrderDetailsController.m */,
-				E0FD0B8F215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -372,6 +379,7 @@
 		E089EC2D21463CF9007975F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E0AB5BF3215B380E00B9D46A /* AddOrderDetails */,
 				E034CBA02152256700DE9542 /* OrderDetailsView */,
 				E02AE0F8214F55DD00FE1DB2 /* AddView */,
 				E02AE0F7214F55D100FE1DB2 /* HeadView */,
@@ -452,6 +460,19 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		E0AB5BF3215B380E00B9D46A /* AddOrderDetails */ = {
+			isa = PBXGroup;
+			children = (
+				E0AB5BF4215B383F00B9D46A /* GPAddOrderDetailsCell.h */,
+				E0AB5BF5215B383F00B9D46A /* GPAddOrderDetailsCell.m */,
+				E0AB5BF6215B383F00B9D46A /* GPAddOrderDetailsCell.xib */,
+				E0AB5BF9215B583000B9D46A /* GPAddOrderDetailHeadView.h */,
+				E0AB5BFA215B583000B9D46A /* GPAddOrderDetailHeadView.m */,
+				E0AB5BFC215B583B00B9D46A /* GPAddOrderDetailHeadView.xib */,
+			);
+			path = AddOrderDetails;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -518,11 +539,12 @@
 				E034CB9F2152234300DE9542 /* GPOrderDetailsController.storyboard in Resources */,
 				E02AE10A214F9D3B00FE1DB2 /* GPBearPositionView.xib in Resources */,
 				E02AE100214F570E00FE1DB2 /* GPAddRecordCell.xib in Resources */,
+				E0AB5BF8215B383F00B9D46A /* GPAddOrderDetailsCell.xib in Resources */,
 				E0057B6421424D6D0013A5DD /* LaunchScreen.storyboard in Resources */,
 				E02AE105214F944000FE1DB2 /* GPCurrentHoldOrderView.xib in Resources */,
 				E02AE0ED214F473600FE1DB2 /* GPAssetsCell.xib in Resources */,
 				E0057B6121424D6D0013A5DD /* Assets.xcassets in Resources */,
-				E0FD0B90215A29AB00F8DCE3 /* GPAddOrderDetailsController.storyboard in Resources */,
+				E0AB5BFD215B583B00B9D46A /* GPAddOrderDetailHeadView.xib in Resources */,
 				E089EC6C2147BE63007975F3 /* GPAssetsController.storyboard in Resources */,
 				E0057B5F21424D6B0013A5DD /* Main.storyboard in Resources */,
 			);
@@ -580,6 +602,7 @@
 				E089EC3E2146409C007975F3 /* GPMineController.m in Sources */,
 				E02AE103214F914D00FE1DB2 /* GPCurrentHoldOrderView.m in Sources */,
 				E089EC2421463B8C007975F3 /* UIImage+Size.m in Sources */,
+				E0AB5BF7215B383F00B9D46A /* GPAddOrderDetailsCell.m in Sources */,
 				E0057B5C21424D6B0013A5DD /* ViewController.m in Sources */,
 				E034CBA92152648200DE9542 /* GPOrderDetailsTableViewCell.m in Sources */,
 				E02AE0FF214F570E00FE1DB2 /* GPAddRecordCell.m in Sources */,
@@ -592,6 +615,7 @@
 				E089EC1821463B6E007975F3 /* UIColor+Hex.m in Sources */,
 				E051E2BC214B59E6005EADD7 /* UIView+LayoutMethods.m in Sources */,
 				E089EC2621463B8C007975F3 /* UIImage+Snap.m in Sources */,
+				E0AB5BFB215B583000B9D46A /* GPAddOrderDetailHeadView.m in Sources */,
 				E086B04E215A1CB800462F1A /* GPHighlightBtn.m in Sources */,
 				E02AE0EC214F473600FE1DB2 /* GPAssetsCell.m in Sources */,
 				E089EC2821463B8C007975F3 /* UIImage+Color.m in Sources */,

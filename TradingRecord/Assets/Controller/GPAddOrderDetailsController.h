@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger,OrderStyle){
+    AddStyle = 0,
+    UpdateStyle,
+};
+
 @interface GPAddOrderDetailsController : UIViewController
+
+- (instancetype)initWithType:(OrderStyle)orderStyle;
 
 @end
